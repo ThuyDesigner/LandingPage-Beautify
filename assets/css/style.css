@@ -173,7 +173,7 @@
 /* welcome-area */
 
 .welcome-area {
-    background-image: url(../images/pexels-ron-lach-8128063.png);
+    /* background-image: url(../images/pexels-ron-lach-8128063.png); */
     width: 100%;
     height: 100vh;
     min-height: 793px;
@@ -181,10 +181,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
-
+.slide-img{
+   
+}
+.header-text{
+    left: 10%!important;
+}
 .content-text {
     height: 100vh;
+    
 }
 
 .content-text .title-text {
