@@ -10,7 +10,7 @@
   --font-family: "Montserrat", Times, serif;
   --color-bg-baget: #eeeefd;
   --color-bg-blue: #e6e6fc;
-  --color-bg-light-default: #f7eae2;
+  --color-bg-light-default: #FAF5F4;
   --color-bg-dark-default: #c8c8c8;
   --color-text-primary: #100d0d;
   --color-text-secondary: #c38e88;
@@ -432,6 +432,9 @@
   height: 16px !important;
 }
 /* Features Blog  */
+.blog {
+  background-color: var(--color-bg-light-default);
+}
 .blog .title-blog {
   text-align: center;
   padding: 50px;
@@ -473,6 +476,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-white);
 }
 .blog-item-img::before {
   content: "";
@@ -514,3 +518,47 @@
   background-color: var(--color-text-secondary);
   color: white;
 }
+/* Features review  */
+.review {
+  padding: 100px;
+}
+.review .title-review{
+  text-align: center;
+}
+.gr-review .review-item .review-item-detail .review-item-img{
+  width: 120px;
+  height: 120px;
+}
+.gr-review .review-item{
+  padding: 40px;
+  text-align: center;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+}
+.gr-review .review-item .review-item-detail{
+  border: 1px solid var(--color-light-primary);
+  padding: 20px;
+}
+.review  .gr-review .review-item .review-item-detail .review-item-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.review  .gr-review .review-item .review-item-detail .review-item-content{
+  color: var(--color-text-primary);
+  padding: 10px 0;
+  word-wrap: break-word;
+  height: 60px;
+ overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review  .gr-review .review-item .review-item-detail .review-item-name{
+  color: var(--color-text-secondary);
+  padding: 10px 0px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
