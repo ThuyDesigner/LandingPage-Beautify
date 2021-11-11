@@ -61,21 +61,56 @@
 /*css for button*/
 
 .btn-outline-white-circle {
-  cursor: pointer;
+  /* cursor: pointer;
   font-size: 14px;
   border-radius: 25 px;
-  padding: 15 px 25 px;
-  background-color: var(--color-white);
+  padding: 15 px 25 px !important;
+  
   border: 1px solid var(--color-text-secondary);
-  text-transform: uppercase;
+ 
   color:var(--color-text-secondary);
-  font-weight: 600;
+  
   letter-spacing: 1px;
+  border-radius: 100%; */
+  background-color: var(--color-white);
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  font-size: 16px;
+  cursor: pointer;
   border-radius: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--color-text-secondary);
+  
 }
+.btn-outline-white-circle svg{
+  color: var(--color-text-secondary);
+}
+.btn-outline-white-circle:hover svg{
+  color: var(--color-white);
+}
+
 .btn-outline-white-circle:hover{
   color: var(--color-white);
   background-color: var(--color-text-secondary);
+}
+.btn-primary-circle {
+  background-color: var(--color-text-secondary);
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn-primary-circle:hover {
+  background-color: var(--color-icon-primary);
+}
+.btn-primary-circle svg{
+  color: var(--color-white);
 }
 
 .btn-primary-default {
@@ -453,7 +488,7 @@
   margin-top: 0px;
   border-width: 20px;
   border-style: solid;
-  border-color: var(--color-white) transparent transparent transparent;
+  border-color: var(--color-bg-light-default) transparent transparent transparent;
   left: 50%;
   margin-left: -20px;
   top: 0;
@@ -476,7 +511,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
 }
 .blog-item-img::before {
   content: "";
@@ -484,7 +519,7 @@
   bottom: 0;
   border-width: 20px;
   border-style: solid;
-  border-color: transparent transparent var(--color-white) transparent;
+  border-color: transparent transparent var(--color-bg-light-default) transparent;
   left: 50%;
   margin-left: -20px;
 }
